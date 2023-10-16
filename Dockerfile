@@ -7,7 +7,6 @@ COPY . .
 
 FROM openjdk:17-jdk-slim
 
-RUN /bin/sh -c apt-get install maven -y
 RUN mvn clean install
 
 EXPOSE 8080
